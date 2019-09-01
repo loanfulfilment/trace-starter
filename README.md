@@ -15,9 +15,7 @@ This is the library used by loan fulfilment to do open tracing using Jaeger.
 #### How to publish to maven local?
 
 . Add `maven-publish` plugin
-
 . Add following to build.gradle
-
 
         `publishing {
                publications {
