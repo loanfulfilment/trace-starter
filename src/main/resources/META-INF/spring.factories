@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.swapnilsankla.tracestarter.TraceConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.swapnilsankla.tracestarter.TraceConfiguration, com.swapnilsankla.tracestarter.TraceIdExtractor
