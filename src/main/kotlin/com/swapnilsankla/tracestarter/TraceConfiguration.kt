@@ -18,7 +18,7 @@ class TraceConfiguration {
     private lateinit var jaegerHost: String
 
     @Value("\${tracer.port}")
-    private lateinit var jaegerPort: Integer
+    private var jaegerPort: Int = 0
 
     @Bean
     fun tracer(): Tracer {
@@ -36,7 +36,7 @@ class TraceConfiguration {
                     .withSender(
                         io.jaegertracing.Configuration.SenderConfiguration.fromEnv()
                             .withAgentHost(jaegerHost)
-                            .withAgentPort(jaegerPort.toInt())
+                            .withAgentPort(jaegerPort)
                     )
             )
             .tracer
